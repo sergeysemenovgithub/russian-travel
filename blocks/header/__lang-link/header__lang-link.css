@@ -1,8 +1,19 @@
 .header__lang-link {
-    color: white;
+    font-size: 18px;
+    line-height: 1.11;
+    text-align: right;
+    padding-bottom: 8px;
 }
 
 .header__lang-link:nth-of-type(1) {
     text-decoration: underline;
     margin-right: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    .header__lang-link {
+        padding-bottom: 6px;
+        font-size: 24px;
+        line-height: 1.17;
+    }
 }
