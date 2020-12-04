@@ -1,4 +1,43 @@
-.lead__image {
+/*.lead__image {
     width: 100%;
     margin-top: 40px;
+}*/
+
+.lead__image {
+    margin-top: 40px;
+    width: 100%;
+    /*background-image: url('./lead-image-320.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 60vw;
+    max-width: 984px;
+    max-height: 615px;*/
 }
+
+@media screen and (min-width: 768px) {
+    .lead__image {
+        /*background-image: url(./lead-image-768.jpg);*/
+        margin-top: 56px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .lead__image {
+        /*background-image: url(./lead-image-1024.jpg);
+        width: calc(100vw - 96px);
+        height: calc((100vw - 96px)*0.6);*/
+        margin: 56px 48px 0;
+        width: calc(100% - 96px);
+    } 
+}
+
+@media screen and (min-width: 1280px) {
+    .lead__image {
+        /*background-image: url(./lead-image-1280.jpg);
+        width: calc(100vw - 296px);
+        height: calc((100vw - 296px)*0.6);*/
+        margin: 64px 148px 0;
+        width: calc(100% - 296px);
+    }
