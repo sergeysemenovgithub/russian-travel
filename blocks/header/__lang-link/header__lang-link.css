@@ -3,11 +3,17 @@
     line-height: 1.11;
     text-align: right;
     padding-bottom: 8px;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
 }
 
 .header__lang-link:nth-of-type(1) {
     text-decoration: underline;
     margin-right: 18px;
+}
+
+.header__lang-link:hover {
+    opacity: 0.8;
 }
 
 @media screen and (min-width: 768px) {
