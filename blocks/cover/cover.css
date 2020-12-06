@@ -2,10 +2,14 @@
     background-image: url('./cover-background.jpg');
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    height: 62.5vw;
+    width: 100%;
     position: relative;
     margin: 0 auto;
+    max-width: 1184px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cover::before {
@@ -24,9 +28,21 @@
     opacity: 0.8;
 }
 
+@media screen and (min-width: 768px) {
+    .cover {
+        min-height: 480px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cover {
+        min-height: 640px;
+    }
+}
+
 @media screen and (min-width: 1280px) {
     .cover {
-        width: calc(100% - 96px);
-        max-height: 740px;
+        /*width: calc(100% - 96px);*/
+        min-height: 740px;
     }
 }

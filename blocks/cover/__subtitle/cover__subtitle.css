@@ -3,26 +3,15 @@
     line-height: 1.14;
     text-align: center;
     margin: 0;
-    padding: 16px 27px 33px;
+    padding-top: 16px;
     position: relative;
+    white-space: pre-line;
 }
 
 @media screen and (min-width: 768px) {
     .cover__subtitle {
         font-size: 18px;
         line-height: 1.22;
-        padding: 32px 204px 115px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .cover__subtitle {
-        padding: 32px 332px 195px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .cover__subtitle {
-        padding: 32px 412px 245px;
+        padding-top: 32px;
     }
 }
